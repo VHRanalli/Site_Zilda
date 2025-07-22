@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*main{
+    background: url("/img/fundo.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}*/
+
+#corNav{
+    background-color: aqua;
+}
+
+.facebook{
+    background-color: blue;
+}
+
+.youtube{
+    background-color: red;
+}
+
+.zap-zap{
+    background-color: green;
+}
+
+.zap-zap:hover, .facebook:hover, .youtube:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.imdSlide{
+    height: 400px;
+}
+
+/* Para telas até 1024px */
+@media screen and (max-width: 1024px) {
+    .imdSlide {
+        height: 500px; /* Esta será a altura padrão para telas <= 1024px, a menos que uma regra mais específica abaixo a sobrescreva */
+    }
+}
+
+/* Para telas até 768px (sobrescreve a anterior para larguras menores ou iguais a 768px) */
+@media screen and (max-width: 768px) {
+    .imdSlide {
+        height: 400px;
+    }
+}
+
+/* Para telas até 360px (sobrescreve as anteriores para larguras menores ou iguais a 360px) */
+@media screen and (max-width: 360px) {
+    .imdSlide {
+        height: 300px;
+    }
+}
+
+.footer{
+    background-color: #A2763E;
+}
+
+.mapa{
+    width: 79%;
+    height: 300px;
+}
+
+.navegacao{
+    background-color: #ede7f6;
+}
+
+.navega{
+    background-color: #ede7f6;
+    margin-top: -10.5px;
+}
+
+.card-borda{
+    border-style: solid;
+    border-color: #564175;
+    border-radius: 2.5%;
+    border-width: 1.5px;
+}
+
+.corpo-card{
+    background-color: #ede7f6;
+}
+
+.rodape{
+    padding: 1px;
+    text-align: center;
+    background-color: #ede7f6;
+}
+.texto-cor{
+    color: #2c1c42 !important;
+}
+
+.texto-cor-mexido{
+    color: #2c1c42 !important;
+}
+
+.texto-cor-mexido:hover{
+    font-weight: 600;
+}
+
+.sobre-min-space{
+    margin: 2% 0.1% 0.1% 0.1% !important;
+    background-color: #ede7f6;
+    border-color: #564175;
+}
+
+.tamanho{
+    margin: 2%;
+}
+
+main{
+    background-color: #564175;
+}
+
+.bloco {
+  display: flex; /* Habilita o uso de flexbox */
+  justify-content: space-around; /* Distribui as imagens com espaçamento */
+}
+
+.imagem-bloco {
+  width: 50%; /* Define a largura de cada imagem */
+  margin: 10px; /* Adiciona margem para espaçamento */
+}
+
+.imagem-bloco img {
+  width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+  display: block; /* Remove espaços extras abaixo da imagem */
+}
