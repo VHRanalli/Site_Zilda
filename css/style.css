@@ -14,14 +14,17 @@
 
 .facebook{
     background-color: blue;
+    color: #fff;
 }
 
 .youtube{
     background-color: red;
+    color: #fff;
 }
 
 .zap-zap{
     background-color: green;
+    color: #fff;
 }
 
 .zap-zap:hover, .facebook:hover, .youtube:hover{
@@ -33,14 +36,39 @@
     height: 400px;
 }
 
+/* Para telas até 1024px */
+@media screen and (max-width: 1024px) {
+    .imdSlide {
+        height: 500px; /* Esta será a altura padrão para telas <= 1024px, a menos que uma regra mais específica abaixo a sobrescreva */
+    }
+}
+
+/* Para telas até 768px (sobrescreve a anterior para larguras menores ou iguais a 768px) */
+@media screen and (max-width: 768px) {
+    .imdSlide {
+        height: 400px;
+    }
+
+    .cor-botao{
+        background-color: #000;
+        color: #fff
+    }
+}
+
+/* Para telas até 360px (sobrescreve as anteriores para larguras menores ou iguais a 360px) */
 @media screen and (max-width: 360px) {
-    .imdSlide{
+    .imdSlide {
         height: 300px;
+    }
+
+    .cor-botao{
+        background-color: #000;
+        color: #fff;
     }
 }
 
 .footer{
-    background-color: #A2763E;
+    background-color: #ede7f6;
 }
 
 .mapa{
@@ -62,6 +90,11 @@
     border-color: #564175;
     border-radius: 2.5%;
     border-width: 1.5px;
+    overflow: hidden;
+}
+
+.radio-borda{
+    border-radius: 2.5%;
 }
 
 .corpo-card{
@@ -73,6 +106,7 @@
     text-align: center;
     background-color: #ede7f6;
 }
+
 .texto-cor{
     color: #2c1c42 !important;
 }
@@ -96,7 +130,7 @@
 }
 
 main{
-    background-color: #564175;
+    background-color: #c0acdd;
 }
 
 .bloco {
