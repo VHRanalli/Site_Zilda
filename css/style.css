@@ -33,23 +33,8 @@
     height: 400px;
 }
 
-/* Para telas até 1024px */
-@media screen and (max-width: 1024px) {
-    .imdSlide {
-        height: 500px; /* Esta será a altura padrão para telas <= 1024px, a menos que uma regra mais específica abaixo a sobrescreva */
-    }
-}
-
-/* Para telas até 768px (sobrescreve a anterior para larguras menores ou iguais a 768px) */
-@media screen and (max-width: 768px) {
-    .imdSlide {
-        height: 400px;
-    }
-}
-
-/* Para telas até 360px (sobrescreve as anteriores para larguras menores ou iguais a 360px) */
 @media screen and (max-width: 360px) {
-    .imdSlide {
+    .imdSlide{
         height: 300px;
     }
 }
